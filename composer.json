@@ -1,0 +1,37 @@
+{
+  "name": "ishannz/silverstripe-elemental-audio",
+  "type": "silverstripe-vendormodule",
+  "description": "Audio play music content block for SilverStripe Elemental",
+  "authors": [
+    {
+      "name": "Ishan Jayamanne",
+      "email": "ishanjmails@gmail.com"
+    }
+  ],
+  "keywords": [
+    "silverstripe", "elemental", "blocks", "dynamic", "audio"
+  ],
+  "license": "BSD-3-Clause",
+  "require": {
+    "silverstripe/vendor-plugin": "^1@dev",
+    "dnadesign/silverstripe-elemental": "^2@dev || ^3@dev",
+    "silverstripe/recipe-cms": "^1@dev || ^4@dev",
+    "unclecheese/display-logic": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/PHPUnit": "^5.7",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "config": {
+    "process-timeout": 600
+  },
+  "extra": {},
+  "autoload": {
+    "psr-4": {
+      "Ishannz\\Elements\\Audio\\": "src/",
+      "Ishannz\\Elements\\Audio\\Test\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

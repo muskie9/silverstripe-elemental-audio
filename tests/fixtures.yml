@@ -1,0 +1,21 @@
+SilverStripe\Assets\File:
+  audio_file:
+    FileFilename: example.mp3
+    FileHash: 55b443b60176235ef09801153cca4e6da7494a0c
+    Name: example.mp3
+
+Ishannz\Elements\Audio\Elements\ElementAudio:
+  audio_upload:
+    AudioType: 'Upload'
+    Title: 'Sample title upload'
+    AudioSummary: 'Samaple summary upload'
+    TranscriptTitle: 'Transcript title upload'
+    Transcript: 'Transcript upload'
+    Audio: =>SilverStripe\Assets\File.audio_file
+  audio_embed:
+    AudioType: 'Embed'
+    Title: 'Sample title embed'
+    AudioSummary: 'Samaple summary embed'
+    TranscriptTitle: 'Transcript title embed'
+    Transcript: 'Transcript embed'
+    EmbedCode: '<iframe>Embed data</iframe>'
